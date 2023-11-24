@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title> || IntercityNetworks || Intranet || </title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="intranet.html"><img src="img/logo-intercity-desktop.svg" alt="logo_zbits"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Vacaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Permisos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tramites
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Caja de compensación</a></li>
+                      <li><a class="dropdown-item" href="#">Asignaciones</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Prestamos.</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Reloj Control</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-1" type="submit">buscar</button>
+                  <a href="login.html" class="btn btn-outline-success my-1" type="button" href="index.html">Acceso</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+<section class="container">
+<main class="row">
+
+  <div class="col-md-12 m-4 bg-light rounded p-5">
+    <h1 class="font-weight-bold">IntercityNetworks >_ </h1>
+      <h2 class="display-5 font-weight-bold">Intranet</h2>
+    <p>Aqui encontraras accesos a recursos personales y de permisos de acces a plataformas como:
+      <ul>
+        <li class="" href="contacto.html">Lista Contacto Clientes</li>
+        <li class="" href="">Lista Servicios Clientes, altas y bajas</li>
+        <li class="" href="">Datos personales de RRHH</li>
+        <li class="btn btn-outline-success m-4 " href="">Mas</li>
+      </ul> enlaces locales credenciales, etc.</p>
+  </div>
+<div class="row m-4">
+  <div class="col-md-6 bg-light p-5">
+    <h1 class="display-5">Inventario Equipos</h1>
+    <a href="#" class="btn btn-outline-dark">Acceso </a>
+  </div>
+  <div class="col-md-6 bg-light p-5">
+    <h1 class="display-5">Inventario Clientes</h1>
+    <a href="#" class="btn btn-outline-dark">Acceso </a>
+  </div>
+</div>
+</main>
+    <div class="row">
+        <div class="col-md-4 m-4">
+            <h1 class="display-4">nombre de usuario $$</h1>
+            <form class="my-4" action="login.php" method="get">
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nombre: </label>
+                    <input type="text" class="form-control" id="username" aria-describedby="userHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Apellido: </label>
+                    <input type="text" class="form-control" id="lastname" aria-describedby="userHelp">
+                </div>
+              <div class="mb-3">
+                <label for="ejemplocorreo" class="form-label">Correo: example@intercity.cl</label>
+                <input type="email" class="form-control" id="ejemplocorreo" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Inicia sesion desde <a href="index.html">Accesos usuario</a></div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Clave:</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <div class="mb-3">
+                <label for="Select" class="form-label">Seleccion</label>
+                <select id="Select" class="form-select">
+                  <option>......</option>
+                  <option>Operaciones</option>
+                  <option>Comercial</option>
+                  <option>Consultor</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1"><- Confirmar</label>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-success m-4" type="submit">Ingresar</button>
+              </div>
+            </form>
+        </div>
+        <div class="col-md-4 m-4"></div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+</html>

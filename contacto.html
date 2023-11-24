@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <title> Intranet IntercityNetworks || Soporte </title>
+        <!--hojas de estilos personalizables-->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="intranet.html"><img src="img/logo-intercity-desktop.svg" alt="logo_zbits"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Vacaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Permisos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tramites
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Caja de compensación</a></li>
+                      <li><a class="dropdown-item" href="#">Asignaciones</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Prestamos.</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Reloj Control</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-1" type="submit">buscar</button>
+                  <a href="login.html" class="btn btn-outline-success my-1" type="button" href="index.html">Acceso</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--header-->
+    <main class="row">
+
+        <div class="col-md-12 m-4 bg-light rounded p-5">
+          <h1 class="font-weight-bold">IntercityNetworks >_ </h1>
+            <h2 class="display-5 font-weight-bold">Inventario Clientes</h2>
+          <button class="btn btn-outline-success ml-2">Buscar</button>
+        </div>
+      
+      </main>
+      <div class="container">
+      <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" id="ID_Cliente">ID #</th>
+            <th scope="col" id="Nombre">Empresa</th>
+            <th scope="col" id="Nombre_con1">Contacto Comercial</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Correo</th>
+            <th scope="col">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-1" type="submit">buscar</button>
+                </form>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th >1</th>
+            <td >Mark</td>
+            <td>Otto</td>
+            <td >Mark</td>
+            <td >Otto</td>
+            <td>
+                <button class="btn btn-danger" type="button" data-toggle="delete" data-target="#delete"><i class="bi bi-trash"></i></button>
+                
+                <div class="modal" id="delete" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Eliminar Cliente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>¿Estas seguro de eliminar al ususario, $usuario</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal"><i class="bi bi-check-square-fill"></i></button>
+                <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#myModal"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal"><i class="bi bi-arrow-up-circle"></i></button>  
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Mark</td>
+            <td>
+                <a href=""><i class="btn btn-danger bi bi-trash"></i></a>
+                <a href=""><i class="btn btn-success bi bi-check-square-fill"></i></a>
+                <a href=""><i class="btn btn-warning bi bi-pencil-square"></i></a>
+                <a href=""><i class="btn btn-primary bi bi-arrow-up-circle"></i></a>  
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+            <td>@fat</td>
+            <td>Mark</td>
+            <td>
+                <a href=""><i class="btn btn-danger bi bi-trash"></i></a>
+                <a href=""><i class="btn btn-success bi bi-check-square-fill"></i></a>
+                <a href=""><i class="btn btn-warning bi bi-pencil-square"></i></a>
+                <a href=""><i class="btn btn-primary bi bi-arrow-up-circle"></i></a>  
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div><!--fin responsive-->
+    </div><!--fin contenedor-->
+    <!--script CDN bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+       
+</body>
+</html>
